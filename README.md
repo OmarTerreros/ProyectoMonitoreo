@@ -6,7 +6,7 @@
 flask-monitoring-stack/
 ├── flask/
 │   ├── app.py
-│   └── requirements.txt
+│   └── requerimientos.txt
 ├── prometheus.yml
 ├── docker-compose.yml
 ├── README.md
@@ -128,7 +128,7 @@ Este proyecto es un stack de monitoreo completo con:
 
 1. Clona el repo:
 ```bash
-git clone https://github.com/tu_usuario/flask-monitoring-stack.git
+git clone https://github.com/tu_usuario/Monitoreoflask.git
 cd flask-monitoring-stack
 ```
 
