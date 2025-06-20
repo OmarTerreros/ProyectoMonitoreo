@@ -6,7 +6,7 @@ app = Flask(__name__)
 client = MongoClient("mongodb://monguito:27017/")
 db = client.test
 
-# 🔢 Metrica personalizada
+#Metrica personalizada
 contador_insert = Counter("insert_total", "Número total de inserts en Mongo")
 
 @app.route("/")
@@ -25,7 +25,7 @@ def all():
     docs = list(db.devops.find({}, {"_id": 0}))
     return jsonify(docs)
 
-# 🔍 Endpoint para Prometheus
+#Endpoint de Prometheus
 @app.route("/metrics")
 def metrics():
     return generate_latest(), 200, {'Content-Type': CONTENT_TYPE_LATEST}
